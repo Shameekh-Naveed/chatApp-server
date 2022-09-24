@@ -18,6 +18,12 @@ const UserSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  friends: [{
+    type: String,
+  }],
+  socketId:{
+    type:String
+  }
 });
 
 const myDB = mongoose.connection.useDb('chatApp');

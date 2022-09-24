@@ -1,7 +1,6 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 
-
 const connectToMongo = () => {
   mongoose.connect(
     process.env.REACT_APP_mongoURI,
